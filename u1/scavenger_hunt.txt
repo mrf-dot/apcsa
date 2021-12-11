@@ -1,0 +1,37 @@
+ENIAC – 
+Hardware – The physical machine components that allow for programs to be run.
+Software – Programs created to perform certain functions on a machine.
+Bit – A singular switch (either one or zero) which is the smallest logical unit on a computer.
+Byte – Eight bits. The amount of bits necessary to render one ASCII character
+Secondary Memory – 
+RAM – 
+CPU –
+ACM Code of Ethics –
+High–Level Language - Languages that need to be compiled to machine code in order to be run. These programs are much easier for humans to read and write.
+Programming – 
+Object Oriented Programing (OOP)
+IDE –
+Algorithm –
+Byte Code – A language meant to be read by a computer and not by humans.
+Source Code – The code of a program before it has been compiled.
+JVM –
+Compile – The act of turning human readable code into machine readable byte code.
+Run –
+Class –
+Method -
+Import Statement – A line of code meant to add libraries for access in your code.
+Syntax –
+Semantics –
+Assignment Operator –
+Primitive Data Type –
+String Literal –
+Modulus –
+Casting – An event in which your code assigns a type to a variable.
+Concatenation – The act of combining multiple strings into one.
+Escape Character – A character in a string meant to be read as an instruction rahter than be rendered as plain text.
+Comments – Segments of code meant to be ignored by a compiler for the intent of documentation
+Pseudocode – Code that outlines the steps of a program without being syntacticly valid
+Syntax Error – 
+Run-time Error - 
+Logic Error –
+Debug
