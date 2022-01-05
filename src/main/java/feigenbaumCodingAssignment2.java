@@ -23,7 +23,7 @@
 /* Imports scanner module */
 import java.util.Scanner;
 
-public class feigenbaumCodingAssignment2 {
+public class FeigenbaumCodingAssignment2 {
 	public static void main(String[] args) {
 		/* Displays program instructions (welcome message) */
 		System.out.print("Welcome to the magnificent Java powered store.\n"

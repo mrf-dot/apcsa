@@ -11,7 +11,7 @@
 /* Imports the scanner module */
 import java.util.Scanner; /* dd */
 
-public class feigenbaumBaseball
+public class FeigenbaumBaseball
 {
 	public static void main(String[] args)
 	{

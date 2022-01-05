@@ -19,7 +19,7 @@
 import java.util.Scanner; // Imports the Scanner module
 import java.util.Random; // Imports random number generation
 
-public class finalProject {
+public class finalProjectU1 {
 	public static void main(String[] args) {
 		// Tells the client about the program
 		System.out.print("This program outputs fantasy baseball and soccer statistics.\n"

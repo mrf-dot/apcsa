@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class test
+public class Test
 {
 	public static void main(String[] args)
 	{
@@ -24,5 +24,19 @@ public class test
 			/* Increments num1 */
 			num1++;
 		}
+	}
+}
+
+// Chad version with a for loop
+class BetterProgram {
+	public static void main(String[] args) {
+		Scanner scanNum = new Scanner(System.in);
+		System.out.print("Enter two numbers (separated by spaces\n"
+				+ "=> ");
+		int num1 = scanNum.nextInt(), num2 = scanNum.nextInt();
+		for (int i = num1; i < num2; i++)
+			if (i % 2 == 0)
+				System.out.printf("%d ", i);
+		scanNum.close();
 	}
 }

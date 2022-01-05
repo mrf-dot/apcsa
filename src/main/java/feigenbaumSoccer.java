@@ -10,7 +10,7 @@
 
 import java.util.Scanner; // Imports the Scanner module
 
-public class feigenbaumSoccer
+public class FeigenbaumSoccer
 {
 	public static void main(String[] args)
 	{
