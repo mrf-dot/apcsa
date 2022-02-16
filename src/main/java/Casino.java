@@ -1,38 +1,4 @@
 class Casino {
-	// Laguna Method:
-	// public static void main(String[] args) {
-	// 	Player player = new Player("Gambler");
-	// 	int spins = 0;
-	// 	SlotMachine machine;
-	// 	// Automatically select the cost of the machine
-	// 	if (Math.random() < .5) {
-	// 		machine = new SlotMachine(5);
-	// 		System.out.println("Welcome, " + player.getName());
-	// 		System.out.println("You will be using the original machine today, which costs 5 coins");
-	// 	} else {
-	// 		machine = new SlotMachine(10);
-	// 		System.out.println("Welcome, " + player.getName());
-	// 		System.out.println("You will be using the modded machine today, which costs 10 coins");
-	// 	}
-	// 	// Keep playing while the player has enough money
-	// 	while (player.getMoney() >= machine.getCost()) {
-	// 		spins++;
-	// 		machine.pull();
-	// 		System.out.println(machine);
-	// 		player.setMoney(player.getMoney() - machine.getCost());
-	// 		int winnings = machine.calculate();
-	// 		if (winnings > 0) {
-	// 			System.out.println("HIT!!! You win " + winnings + " coins!");
-	// 			player.setMoney(player.getMoney() + winnings);
-	// 		} else {
-	// 			System.out.println("Too bad! No win on this pull.");
-	// 		}
-	// 		System.out.println(player + "\n\n");
-	// 	}
-	// 	System.out.println("GAME OVER! You were able to pull " + spins + " times before going broke!");
-	// }
-
-	// My Method:
 	public static void main(String[] args) {
 		Player player = new Player("Gambler");
 		SlotMachine machine = new SlotMachine((Math.random() < 0.5) ? 5 : 10);
@@ -60,20 +26,20 @@ class Player {
 	private String name;
 	private int money;
 
-	Player(String name) {
+	public Player(String name) {
 		this.name = name;
 		this.money = 100;
 	}
 
-	String getName() {
+	public String getName() {
 		return this.name;
 	}
 
-	int getMoney() {
+	public int getMoney() {
 		return this.money;
 	}
 
-	void setMoney(int money) {
+	public void setMoney(int money) {
 		this.money = money;
 	}
 
@@ -86,7 +52,7 @@ class SlotMachine {
 	private int cost, multiplier;
 	private SlotReel sr1, sr2, sr3;
 
-	SlotMachine(int cost) {
+	public SlotMachine(int cost) {
 		this.cost = cost;
 		this.multiplier = cost / 5;
 		this.sr1 = new SlotReel();
@@ -94,13 +60,13 @@ class SlotMachine {
 		this.sr3 = new SlotReel();
 	}
 
-	void pull() {
+	public void pull() {
 		this.sr1.spin();
 		this.sr2.spin();
 		this.sr3.spin();
 	}
 
-	int getCost() {
+	public int getCost() {
 		return this.cost;
 	}
 
@@ -123,7 +89,7 @@ class SlotMachine {
 		return false;
 	}
 
-	int calculate() {
+	public int calculate() {
 		if (hit3()) {
 			switch (this.sr1.toString()) {
 				case "spade":
@@ -154,15 +120,15 @@ class SlotMachine {
 class SlotReel {
 	private int value;
 
-	void spin() {
+	public void spin() {
 		this.value = (int) (Math.random() * 6) + 1;
 	}
 
-	boolean equals(SlotReel reel) {
+	public boolean equals(SlotReel reel) {
 		return this.value == reel.getValue();
 	}
 
-	int getValue() {
+	public int getValue() {
 		return this.value;
 	}
 
