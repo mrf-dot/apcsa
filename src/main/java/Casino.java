@@ -71,22 +71,11 @@ class SlotMachine {
 	}
 
 	private boolean hit3() {
-		if (this.sr1.toString().equals("horseshoe")
-				|| this.sr1.toString().equals("star")
-				|| this.sr2.toString().equals("horseshoe")
-				|| this.sr2.toString().equals("star")
-				|| this.sr3.toString().equals("horseshoe")
-				|| this.sr3.toString().equals("star"))
-			return false;
-		if (this.sr1.equals(sr2) && this.sr2.equals(sr3))
-			return true;
-		return false;
+		return sr1.equals(sr2) && sr2.equals(sr3) && !(sr1.toString().equals("horseshoe") || sr1.toString().equals("star") || sr2.toString().equals("horseshoe") || sr2.toString().equals("star") || sr3.toString().equals("horseshoe") || sr3.toString().equals("star"));
 	}
 
 	private boolean hit2() {
-		if (this.sr1.toString().equals("horseshoe") && this.sr2.toString().equals("horseshoe"))
-			return true;
-		return false;
+		return sr1.toString().equals("horseshoe") && sr2.toString().equals("horseshoe");
 	}
 
 	public int calculate() {
