@@ -184,7 +184,6 @@ public class DoubleLinkedList<E> {
 			sb.append(" <-> ");
 			next = next.getNext();
 			sb.append(next.toString());
-			// sb.append(next.toString());
 		}
 		return sb.toString();
 	}
@@ -271,6 +270,10 @@ class Node<T> {
 
 	public void setNext(Node<T> next) {
 		this.next = next;
+	}
+
+	public boolean equals(Node<T> other) {
+		return value.equals(other.getValue());
 	}
 
 	public String toString() {
