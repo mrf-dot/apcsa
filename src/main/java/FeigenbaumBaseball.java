@@ -9,7 +9,7 @@
  */
 
 /* Imports the scanner module */
-import java.util.Scanner; /* dd */
+import java.util.Scanner;
 
 public class FeigenbaumBaseball
 {
